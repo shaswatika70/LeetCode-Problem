@@ -4,6 +4,7 @@ int findClosest(int x, int y, int z) {
     if (per1 < per2){
         return 1;
     }
+        
     else if (per1 > per2){
         return 2;
     }
