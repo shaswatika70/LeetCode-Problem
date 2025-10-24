@@ -1,17 +1,17 @@
 class FoodRatings {
-    // Maps
+  
     private Map<String, String> foodToCuisine;
     private Map<String, Integer> foodToRating;
     private Map<String, TreeSet<String>> cuisineToFoods;
 
-    // Comparator for sorting foods within a cuisine
+   
     private Comparator<String> foodComparator = (a, b) -> {
         int ratingA = foodToRating.get(a);
         int ratingB = foodToRating.get(b);
         if (ratingA != ratingB) {
-            return ratingB - ratingA; // higher rating first
+            return ratingB - ratingA; 
         }
-        return a.compareTo(b); // lexicographically smaller first
+        return a.compareTo(b);
     };
 
     public FoodRatings(String[] foods, String[] cuisines, int[] ratings) {
