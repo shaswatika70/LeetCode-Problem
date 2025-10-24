@@ -36,7 +36,7 @@ class FoodRatings {
         String cuisine = foodToCuisine.get(food);
         TreeSet<String> foodsSet = cuisineToFoods.get(cuisine);
 
-        // Remove the old food entry
+      
         foodsSet.remove(food);
 
         // Update rating
