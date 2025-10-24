@@ -42,7 +42,7 @@ class FoodRatings {
   
         foodToRating.put(food, newRating);
 
-        // Reinsert with updated rating
+
         foodsSet.add(food);
     }
 
