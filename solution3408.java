@@ -20,12 +20,12 @@ class TaskManager {
         taskMap = new HashMap<>();
         taskSet = new TreeSet<>((a, b) -> {
             if (a.priority != b.priority) {
-                return Integer.compare(b.priority, a.priority); // higher priority first
+                return Integer.compare(b.priority, a.priority);
             }
             if (a.taskId != b.taskId) {
-                return Integer.compare(b.taskId, a.taskId);     // larger taskId first
+                return Integer.compare(b.taskId, a.taskId);   
             }
-            return Integer.compare(a.userId, b.userId);         // tie-break
+            return Integer.compare(a.userId, b.userId);         
         });
 
         for (List<Integer> t : tasks) {
