@@ -5,7 +5,7 @@ class Solution {
         return merge(lists, 0, lists.length - 1);
     }
     
-    // Recursive function to merge lists from index left to right
+   
     private ListNode merge(ListNode[] lists, int left, int right) {
         if (left == right) return lists[left];
         int mid = left + (right - left) / 2;
@@ -14,7 +14,7 @@ class Solution {
         return mergeTwoLists(l1, l2);
     }
     
-    // Helper function to merge two sorted lists
+  
     private ListNode mergeTwoLists(ListNode l1, ListNode l2) {
         ListNode dummy = new ListNode(0);
         ListNode current = dummy;
