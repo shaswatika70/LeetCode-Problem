@@ -5,7 +5,7 @@ class Solution {
             return Integer.MAX_VALUE;
         }
 
-        // Determine the sign of the result
+        
         boolean negative = (dividend < 0) ^ (divisor < 0);
 
         long dvd = Math.abs((long) dividend);
