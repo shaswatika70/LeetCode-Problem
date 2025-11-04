@@ -2,7 +2,7 @@ class Solution {
     public int minimumTotal(List<List<Integer>> triangle) {
         int n = triangle.size();
         
-        // Start from second last row and move upward
+       
         for (int i = n - 2; i >= 0; i--) {
             for (int j = 0; j < triangle.get(i).size(); j++) {
                 int curr = triangle.get(i).get(j);
