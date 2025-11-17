@@ -1,7 +1,6 @@
 class Solution {
     private int p1 = 0, p2 = 0;
 
-    // Get the smaller value between nums1[p1] and nums2[p2] and move the pointer forwards.
 
     private int getMin(int[] nums1, int[] nums2) {
         if (p1 < nums1.length && p2 < nums2.length) {
