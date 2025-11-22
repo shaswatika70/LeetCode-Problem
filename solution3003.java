@@ -2,6 +2,7 @@ class Solution {
     public int maxPartitionsAfterOperations(String s, int k) {
          Map<Long, Integer> memo = new HashMap<>();
         return dfs(s, 0, true, 0, k, memo) + 1;
+        
     }
     private int dfs(String s, int i, boolean canChange, int mask, int k, Map<Long, Integer> memo) {
         if (i == s.length()) return 0;
