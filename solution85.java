@@ -1,7 +1,6 @@
 class Solution {
     public int maximalRectangle(char[][] matrix) {
         if (matrix.length == 0) return 0;
-
         int rows = matrix.length, cols = matrix[0].length;
         int[] height = new int[cols];
         int[] left = new int[cols];
